@@ -9,4 +9,13 @@ public class ArrayOps{
     }
     return result;
   }
+  public static int largest(int[] arr){
+    int large = 0;
+    for(int i = 0; i < arr.length; i++){
+      if(arr[i] > large){
+        large = arr[i];
+      }
+    }
+    return large;
+  }
 }
