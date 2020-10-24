@@ -24,11 +24,18 @@ public class Tester{
     int[] a = {1,2,3,4,5};
     System.out.println(ArrayOps.sum(a));
     System.out.println(ArrayOps.largest(a));
-    int[][] b = {{1,2,3,4}, {10,30,20}, {5,10}, {5}};
+    int[][] b = {{1,0,12,-1}, {7,-2,2,1}, {-5,-2,2,-9}};
+    int[] c = {1,3,5};
     System.out.println(arrToString(ArrayOps.sumRows(b)));
     System.out.println(arrToString(ArrayOps.largestInRows(b)));
+    System.out.println(ArrayOps.sum(c));
     System.out.println(ArrayOps.sum(b));
-    int[][] c = {{1,2,3,4,5}, {2,3,4,5,1}, {3,4,5,1,2}, {4,5,1,2,3}, {5,1,2,3,4}};
-    System.out.println(arrToString(ArrayOps.sumCols(c)));
+    System.out.println(arrToString(ArrayOps.sumCols(b)));
+    int[][] d = {{1,2,3,4},{2,3,4,1},{3,4,1,2}};
+    int [][] e = {{1,1,1},{2,2,2},{3,3,3}};
+    int [][] f = {{2,2,2},{2,2,2}};
+    System.out.println(ArrayOps.isRowMagic(d));
+    System.out.println(ArrayOps.isRowMagic(e));
+    System.out.println(ArrayOps.isRowMagic(f));
   }
 }
