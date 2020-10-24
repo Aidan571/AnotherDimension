@@ -42,9 +42,9 @@ public class ArrayOps{
     return result;
   }
   public static int[] sumCols(int[][] matrix){
-    int[] result = new int[matrix.length];
+    int[] result = new int[matrix[0].length];
     int holder;
-    for(int i = 0; i < matrix.length; i++){
+    for(int i = 0; i < matrix[0].length; i++){
       holder = 0;
       for(int j = 0; j < matrix.length; j++){
         holder += matrix[j][i];
@@ -53,4 +53,13 @@ public class ArrayOps{
     }
     return result;
   }
+  public static boolean isRowMagic(int[][] matrix){
+    for(int i = 1; i < matrix.length; i++){
+      if(sum(matrix[i]) != sum(matrix[i - 1])){
+        return false;
+      }
+    }
+    return true;
+  }
+
 }
