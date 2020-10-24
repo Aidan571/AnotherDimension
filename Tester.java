@@ -24,7 +24,8 @@ public class Tester{
     int[] a = {1,2,3,4,5};
     System.out.println(ArrayOps.sum(a));
     System.out.println(ArrayOps.largest(a));
-    int[][] b ={{1,2,3,4}, {}, {5,10}, {5}};
+    int[][] b ={{1,2,3,4}, {10,30,20}, {5,10}, {5}};
     System.out.println(arrToString(ArrayOps.sumRows(b)));
+    System.out.println(arrToString(ArrayOps.largestInRows(b)));
   }
 }
