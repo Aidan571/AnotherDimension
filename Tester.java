@@ -32,13 +32,16 @@ public class Tester{
     System.out.println(ArrayOps.sum(b));
     System.out.println(arrToString(ArrayOps.sumCols(b)));
     int[][] d = {{1,2,3,4},{2,3,4,1},{3,4,1,2}};
-    int [][] e = {{1,1,1},{2,2,2},{3,3,3}};
-    int [][] f = {{2,2,2},{2,2,2}};
+    int[][] e = {{1,1,1},{2,2,2},{3,3,3}};
+    int[][] f = {{2,2,2},{2,2,2}};
     System.out.println(ArrayOps.isRowMagic(d));
     System.out.println(ArrayOps.isRowMagic(e));
     System.out.println(ArrayOps.isRowMagic(f));
     System.out.println(ArrayOps.isColMagic(d));
     System.out.println(ArrayOps.isColMagic(e));
     System.out.println(ArrayOps.isColMagic(f));
+    int[][] g = {{2,4,2},{2,2,2}};
+    System.out.println(ArrayOps.isLocationMagic(g,0,1));
+    System.out.println(ArrayOps.isLocationMagic(g,1,1));
   }
 }
