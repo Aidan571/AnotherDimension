@@ -37,5 +37,8 @@ public class Tester{
     System.out.println(ArrayOps.isRowMagic(d));
     System.out.println(ArrayOps.isRowMagic(e));
     System.out.println(ArrayOps.isRowMagic(f));
+    System.out.println(ArrayOps.isColMagic(d));
+    System.out.println(ArrayOps.isColMagic(e));
+    System.out.println(ArrayOps.isColMagic(f));
   }
 }
