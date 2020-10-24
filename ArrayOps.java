@@ -34,5 +34,12 @@ public class ArrayOps{
     }
     return result;
   }
+  public static int sum(int[][] arr){
+    int result = 0;
+    for(int i = 0; i < arr.length; i++){
+      result += sum(arr[i]);
+    }
+    return result;
+  }
   
 }
